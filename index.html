@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html><head>
-<title>oyifw.com</title>
+<title></title>
 <meta name="description" content="">
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noarchive">
@@ -34,17 +34,34 @@ a:hover{text-decoration:underline;}
 </p>
 <p align="center"> 
 <b> <font size="5" face="Verdana"> 
- <a href="https://wwv.mos92.xyz/bbs.php" target="_blank">地址一</a>
+ <a onclick="redirectToRandomSubdomain('3376.top')" target="_blank">地址一</a>
 <br>
-<a href="https://wwv.mos92.xyz/bbs.php" target="_blank">地址二</a>
+<a onclick="redirectToRandomSubdomain('3376.top')" target="_blank">地址二</a>
 <br>
-<a href="https://wwv.mos92.xyz/bbs.php" target="_blank">地址三</a>
+<a onclick="redirectToRandomSubdomain('3376.top')" target="_blank">地址三</a>
 <br>
-<a href="https://wwv.mos92.xyz/bbs.php" target="_blank">地址四</a>
+<a onclick="redirectToRandomSubdomain('3376.top')" target="_blank">地址四</a>
 <br>
-<a href="https://wwv.mos92.xyz/bbs.php" target="_blank">地址五</a>
+<a onclick="redirectToRandomSubdomain('3376.top')" target="_blank">地址五</a>
 <br>
-<a href="https://wwv.mos92.xyz/bbs.php" target="_blank">地址六</a>
+<a onclick="redirectToRandomSubdomain('3376.top')" target="_blank">地址六</a>
+
+  <script>
+    function generateRandomString(length) {
+      var result = '';
+      var characters = 'abcdefghijklmnopqrstuvwxyz';
+      var charactersLength = characters.length;
+      for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    }
+
+    function redirectToRandomSubdomain(domain) {
+      var randomSubdomain = generateRandomString(8); // 生成一个长度为8的随机字符串
+      window.location.href = "https://" + domain + "/#" + randomSubdomain;
+    }
+  </script>
 	
 	   <br>
  
